@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio-Video</title>
+</head>
+<body>
+
+      <audio autoplay controls src="Summertime Sadness.mp3"></audio>
+
+    <audio controls src="Summertime Sadness.mp3" type="audio/mpeg">Sadness</audio>
+    <div>
+        <img id="plan" src="logo.png" alt="">
+    </div>
+    <br>
+    <br>
+    <button aria-controls="myAudio">Play Audio</button> 
+    <!-- aria-controls not working -->
+    <audio id="myAudio" controls src="Summertime Sadness.mp3"> </audio>
+    <!-- <source src="Summertime Sadness.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio> -->
+    <br>
+
+    <video controls src="_Chaar_Shanivaar__VIDEO_Song_-_Badshah___Amaal_Mallik___Vishal___T-Series.mp4" width="40%" height="300px">Hello</video>
+
+    <!-- <video 
+    src="_Chaar_Shanivaar__VIDEO_Song_-_Badshah___Amaal_Mallik___Vishal___T-Series.mp4" 
+    width="640" 
+    height="360" 
+    controls 
+    autoplay 
+    loop 
+    muted 
+    poster="poster.jpg"
+    preload="auto"
+    playsinline
+    crossorigin="anonymous"
+    disableremoteplayback
+    controlslist="nofullscreen nodownload"
+>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video> -->
+
+<!-- 1. src
+Specifies the URL of the audio file.
+ -->
+ <audio src="song.mp3"></audio><br>
+
+ <!-- 
+2. controls
+Displays the audio controls like play, pause, volume, etc.
+  -->
+  <audio controls>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio><br>
+  <!-- 
+    3. autoplay
+Automatically starts playing the audio when the page loads.
+Note: Some browsers may block autoplay unless the audio is muted.
+   -->
+   <audio autoplay>
+    <source src="Summertime Sadness.mp3" type="audio/mpeg">
+  </audio> <br>
+  
+  <!-- 
+    4. loop
+Loops the audio playback continuously (restarts when it ends).
+
+   -->
+   <audio loop>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+<br>
+  <!--
+    5. muted
+Mutes the audio by default when the page loads.
+    -->
+    <audio muted>
+        <source src="song.mp3" type="audio/mpeg">
+      </audio><br>
+
+      <!-- 
+        6. preload
+Specifies how much of the audio file should be loaded when the page loads. It has three possible values:
+none: Don’t preload any audio.
+metadata: Preload only metadata (such as duration and file size).
+auto: Preload the entire audio.
+       -->
+       <audio preload="auto">
+        <source src="song.mp3" type="audio/mpeg">
+      </audio><br>
+
+      <!-- 
+        7. crossorigin
+Specifies how the audio element should handle CORS (Cross-Origin Resource Sharing). It can have two values:
+anonymous: Audio can be shared across origins but without credentials (like cookies).
+use-credentials: Audio can be shared with credentials (like cookies).
+       -->
+
+       <audio crossorigin="anonymous">
+        <source src="song.mp3" type="audio/mpeg">
+      </audio> <br>
+      
+         <!-- 
+            8. playsinline
+Allows the audio to be played inline on mobile browsers (especially on iOS, where it may otherwise trigger fullscreen).
+          -->
+          <audio playsinline>
+            <source src="Summertime Sadness.mp3" type="audio/mpeg">
+          </audio> <br>
+           
+
+
+</body>
+</html>
+<!-- 
+    The <video> tag in HTML is used to embed video content on a webpage. It comes with various attributes that allow you to control the behavior and appearance of the video. Here's a list of all the attributes that can be used with the <video> tag:
+
+1. src
+Specifies the URL of the video file.
+Example: <video src="movie.mp4"></video>
+
+2. controls
+Displays playback controls like play, pause, volume, etc.
+Example: <video controls></video>
+
+3. autoplay
+Starts playing the video automatically when the page loads.
+Note: Autoplaying videos may be blocked by some browsers unless muted.
+Example: <video autoplay></video>
+
+4. muted
+Mutes the audio of the video by default.
+Example: <video muted></video>
+
+5. loop
+Replays the video from the beginning once it ends.
+Example: <video loop></video>
+
+6. preload
+Indicates how much of the video should be loaded when the page loads. Possible values:
+none: Don't preload the video.
+metadata: Preload only the video's metadata (duration, dimensions, etc.).
+auto: Preload the whole video.
+Example: <video preload="metadata"></video>
+
+7. poster
+Specifies an image to be shown while the video is downloading or until the user hits play.
+Example: <video poster="thumbnail.jpg"></video>
+
+8. width
+Sets the width of the video player (in pixels).
+Example: <video width="640"></video>
+
+9. height
+Sets the height of the video player (in pixels).
+Example: <video height="360"></video>
+
+10. playsinline
+Specifies that the video should be played inline (inside the webpage), rather than in full-screen mode (mostly used in iOS devices).
+Example: <video playsinline></video>
+
+11. crossorigin
+Specifies how the video should handle Cross-Origin Resource Sharing (CORS). Possible values:
+anonymous: The video can be shared across origins but without credentials (cookies).
+use-credentials: The video can be shared across origins with credentials (cookies).
+Example: <video crossorigin="anonymous"></video>
+
+12. disableremoteplayback
+Disables the ability to play the video on remote playback devices like smart TVs.
+Example: <video disableremoteplayback></video>
+
+13. controlslist
+Provides a list of control options for the video, like disabling fullscreen or download options. Possible values:
+nodownload: Hides the download button.
+nofullscreen: Disables the ability to go fullscreen.
+noremoteplayback: Disables remote playback options.
+Example: <video controls controlslist="nodownload"></video>
+
+14. default
+Used in conjunction with multiple <track> elements to specify which track is the default one.
+Example: <track default src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+
+ -->
