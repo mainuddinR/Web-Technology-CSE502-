@@ -2,6 +2,25 @@
 <html lang="en">
 <head>
 <title>Example of HTML keygen Tag</title>
+<style>
+	body{
+		background: gray url('logo.png') no-repeat scroll center top;
+		/* background-image: url(logo.png);
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-attachment:scroll; */
+	}
+	#fonts{
+		font-family:'Times New Roman',times, serif;
+		/* font-style:italic; */
+		font-style:oblique;
+	}
+	ul{
+		/* list-style-image: url(logo.png); */
+		list-style-position: outside;
+	}
+
+</style>
 </head>
 <body>
 	<form>
@@ -9,7 +28,24 @@
 		<label>Encryption: <keygen name="key"></label>
 		<input type="submit" value="Submit">
 	</form>
-	<p><strong>Note:</strong> The keygen tag is not supported in Internet Explorer.</p>
+	<p id="fonts"><strong>Note:</strong> The keygen tag is not supported in Internet Explorer.</p>
+	<br>
+	<a href="http://www.loc.gov." target="_top"><img src="logo.png" alt="LOGO" border="2px"></a>Lorem ipsum dolor sit amet.
+	<br>
+	<table>
+
+	</table>
+
+	<embed type="image/jpg" src="logo.png" width="300" height="200">
+
+		<p style="background: url(logo.png);">This is broken</p>
+
+
+		<ul >
+			<li>Buy Food</li>
+			<li>Enroll in College</li>
+			<li>Get a Degree</li>
+		</ul>
 </body>
 </html>
 <!-- action="/examples/html5/demo_keygen.php" method="post" -->
